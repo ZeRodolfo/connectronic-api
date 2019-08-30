@@ -32,7 +32,11 @@ class CategoryController {
 		return res.json(category);
 	}
 
-	async destroy(req, res) {}
+	async destroy(req, res) {
+		await Category.findByIdAndDelete(req.params.id);
+
+		return res.send();
+	}
 }
 
 module.exports = new CategoryController();

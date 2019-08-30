@@ -6,7 +6,11 @@ class CategoryController {
 		return res.json(categories);
 	}
 
-	async show(req, res) {}
+	async show(req, res) {
+		const category = await Category.findById(req.params.id);
+
+		return res.json(category);
+	}
 
 	async store(req, res) {
 		const { name } = req.body;

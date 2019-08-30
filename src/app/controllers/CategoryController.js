@@ -24,7 +24,13 @@ class CategoryController {
 		return res.json(category);
 	}
 
-	async update(req, res) {}
+	async update(req, res) {
+		const category = await Category.findByIdAndUpdate(req.params.id, req.body, {
+			new: true
+		});
+
+		return res.json(category);
+	}
 
 	async destroy(req, res) {}
 }

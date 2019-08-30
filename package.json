@@ -1,9 +1,33 @@
 {
-  "name": "connectronic",
-  "version": "1.0.0",
-  "description": "API Connectronic",
-  "main": "index.js",
-  "repository": "https://github.com/ZeRodolfo/connectronic-api",
-  "author": "José Rodolfo Pinto Pessanha da Silva",
-  "license": "MIT"
+	"name": "connectronic",
+	"version": "1.0.0",
+	"description": "API Connectronic",
+	"author": "José Rodolfo Pinto Pessanha da Silva",
+	"license": "MIT",
+	"main": "index.js",
+	"scripts": {
+		"start": "nodemon src/index.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/ZeRodolfo/connectronic-api.git"
+	},
+	"keywords": [],
+	"bugs": {
+		"url": "https://github.com/ZeRodolfo/connectronic-api/issues"
+	},
+	"homepage": "https://github.com/ZeRodolfo/connectronic-api#readme",
+	"dependencies": {
+		"express": "^4.17.1"
+	},
+	"devDependencies": {
+		"eslint": "^5.9.0",
+		"eslint-config-standard": "^12.0.0",
+		"eslint-plugin-import": "^2.14.0",
+		"eslint-plugin-node": "^8.0.0",
+		"eslint-plugin-promise": "^4.0.1",
+		"eslint-plugin-standard": "^4.0.0",
+		"nodemon": "^1.19.1",
+		"typescript": "^3.5.3"
+	}
 }

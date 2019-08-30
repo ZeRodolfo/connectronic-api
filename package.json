@@ -1,0 +1,9 @@
+{
+  "name": "connectronic",
+  "version": "1.0.0",
+  "description": "API Connectronic",
+  "main": "index.js",
+  "repository": "https://github.com/ZeRodolfo/connectronic-api",
+  "author": "José Rodolfo Pinto Pessanha da Silva",
+  "license": "MIT"
+}

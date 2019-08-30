@@ -1,7 +1,10 @@
 const Category = require('../models/Category');
 
 class CategoryController {
-	async index(req, res) {}
+	async index(req, res) {
+		const categories = await Category.find();
+		return res.json(categories);
+	}
 
 	async show(req, res) {}
 

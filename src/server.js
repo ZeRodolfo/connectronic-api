@@ -1,4 +1,5 @@
 const express = require('express');
+const cors = require('cors');
 const mongoose = require('mongoose');
 const databaseConfig = require('./config/database');
 
@@ -21,6 +22,7 @@ class App {
 
 	middlewares() {
 		this.express.use(express.json());
+		this.express.use(cors())
 	}
 
 	routes() {
